@@ -1,1 +1,1 @@
-# TechWise Blackjack Assignment
+# TechWise Blackjack HW repo
