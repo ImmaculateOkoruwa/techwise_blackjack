@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gaming Table</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="table.html">Game Table</a></li>
+        <li><a href="rules.html">Game Rules</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Game Table -->
+  <main>
+    <h1>Blackjack Table</h1>
+    <section id="game-table">
+      <table>
+        <tr>
+          <th>Player's Cards</th>
+          <th>Dealer's Cards</th>
+          <th>Player's Options</th>
+        </tr>
+        <tr>
+          <td>
+            <ul>
+              <li>Ace of Spades</li>
+              <li>King of Hearts</li>
+              <li>7 of Diamonds</li>
+            </ul>
+          </td>
+          <td>
+            <ul>
+              <li>Queen of Clubs</li>
+              <li>10 of Spades</li>
+            </ul>
+          </td>
+          <td>
+            <dl>
+              <dt>Hit</dt>
+              <dd>Request another card from the dealer.</dd>
+              <dt>Stand</dt>
+              <dd>Keep your current hand and end your turn.</dd>
+              <dt>Split</dt>
+              <dd>Divide your hand into two hands if you have a pair.</dd>
+            </dl>
+          </td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- Player Actions -->
+    <section id="player-actions">
+      <h3>Player's Actions</h3>
+      <p>Select your action:</p>
+      <button type="button" disabled>Hit</button>
+      <button type="button">Stand</button>
+      <button type="button">Split</button>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Gaming Table. All rights reserved.</p>
+  </footer>
+</body>
+</html>
