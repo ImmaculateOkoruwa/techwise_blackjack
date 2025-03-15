@@ -20,36 +20,45 @@
 
   <!-- Main content -->
   <main>
-    <!-- Section for Player's Cards -->
-    <section id="player-cards">
-      <h2>Player's Cards</h2>
-      <ul>
-        <li>Ace of Spades</li>
-        <li>King of Hearts</li>
-        <li>7 of Diamonds</li>
-      </ul>
-    </section>
-
-    <!-- Section for Dealer's Cards -->
-    <section id="dealer-cards">
-      <h2>Dealer's Cards</h2>
-      <ul>
-        <li>Queen of Clubs</li>
-        <li>10 of Spades</li>
-      </ul>
-    </section>
-
-    <!-- Section for Player's Options -->
-    <section id="player-options">
-      <h3>Player's Options</h3>
-      <dl>
-        <dt>Hit</dt>
-        <dd>Request another card from the dealer.</dd>
-        <dt>Stand</dt>
-        <dd>Keep your current hand and end your turn.</dd>
-        <dt>Split</dt>
-        <dd>Divide your hand into two hands if you have a pair.</dd>
-      </dl>
+    <!-- Table for Player's Cards, Dealer's Cards, and Player's Options -->
+    <section id="game-table">
+      <h2>Game Table</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Player's Cards</th>
+            <th>Dealer's Cards</th>
+            <th>Player's Options</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <ul>
+                <li>Ace of Spades</li>
+                <li>King of Hearts</li>
+                <li>7 of Diamonds</li>
+              </ul>
+            </td>
+            <td>
+              <ul>
+                <li>Queen of Clubs</li>
+                <li>10 of Spades</li>
+              </ul>
+            </td>
+            <td>
+              <dl>
+                <dt>Hit</dt>
+                <dd>Request another card from the dealer.</dd>
+                <dt>Stand</dt>
+                <dd>Keep your current hand and end your turn.</dd>
+                <dt>Split</dt>
+                <dd>Divide your hand into two hands if you have a pair.</dd>
+              </dl>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </section>
 
     <!-- Section for Player's Actions -->
