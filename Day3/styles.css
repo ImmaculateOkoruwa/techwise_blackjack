@@ -1,0 +1,96 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #444;
+    text-align: center;
+  }
+  
+  /* Header */
+  header {
+    background-color: #ffcccb;
+    padding: 15px 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin: 0 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 1.1em;
+  }
+  
+  nav ul li a:hover {
+    color: #ff69b4;
+  }
+  
+  /* Table Styling */
+  #game-table {
+    margin: 30px auto;
+    width: 80%;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  th, td {
+    padding: 15px;
+    border: 2px solid #ffb6c1;
+  }
+  
+  th {
+    background-color: #ffefd5;
+    font-size: 1.2em;
+  }
+  
+  /* Player Actions */
+  #player-actions {
+    margin-top: 20px;
+  }
+  
+  button {
+    padding: 12px 25px;
+    margin: 10px;
+    border: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+  }
+  
+  button[disabled] {
+    background-color: #dcdcdc;
+  }
+  
+  button:not([disabled]) {
+    background-color: #90ee90;
+  }
+  
+  button:not([disabled]):hover {
+    background-color: #77dd77;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #ffcccb;
+    padding: 15px 0;
+    margin-top: 30px;
+  }
+  
