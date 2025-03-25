@@ -1,0 +1,102 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  header, footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    z-index: 1000;
+  }
+  
+  header {
+    top: 0;
+  }
+  
+  footer {
+    bottom: 0;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #444;
+    color: white;
+    padding: 10px;
+    margin-top: 60px; /* To avoid overlap with the fixed header */
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+  }
+  
+  nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+  }
+  
+  main {
+    flex: 1;
+    margin: 60px 0; /* To avoid overlap with header and footer */
+    padding: 20px;
+  }
+  
+  .about {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .about div {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  /* Responsive Elements */
+  .disappearing {
+    display: none;
+  }
+  
+  .mobileFeature {
+    display: none;
+  }
+  
+  /* Breakpoint */
+  @media (min-width: 500px) {
+    .disappearing {
+      display: block;
+    }
+  }
+  
+  @media (max-width: 899px) {
+    .mobileFeature {
+      display: block;
+    }
+  }
