@@ -1,0 +1,149 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+
+header, footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  z-index: 1000;
+}
+
+header {
+  top: 0;
+}
+
+footer {
+  bottom: 0;
+  font-size: 10px; /* Copyright font size */
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: #444;
+  color: white;
+  padding: 10px;
+  margin-top: 60px; /* To avoid overlap with the fixed header */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #555;
+  border-radius: 5px;
+}
+
+main {
+  flex: 1;
+  margin: 60px 20px; /* To avoid overlap with header and footer, added left and right margin */
+  padding: 20px;
+}
+
+h1, h2 {
+  font-family: "Oswald", sans-serif;
+  margin: 20px 0;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+p {
+  font-size: 16px;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.about div {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+/* Responsive Elements */
+.disappearing {
+  display: none;
+}
+
+.mobileFeature {
+  display: none;
+}
+
+/* Breakpoint */
+@media (min-width: 500px) {
+  .disappearing {
+    display: block;
+  }
+}
+
+@media (max-width: 899px) {
+  .mobileFeature {
+    display: block;
+  }
+}
+
+#hero {
+  background-color: #e0e0e0;
+  padding: 50px 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#whyUs {
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#callToAction {
+  padding: 30px 20px;
+  background-color: #f0f0f0;
+  text-align: center;
+}
+
+#callToAction button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}

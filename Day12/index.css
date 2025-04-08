@@ -1,0 +1,64 @@
+/* Hero Section */
+#hero {
+    width: 100%;
+    height: 30vh;
+    background-color: #90ee90; /* Example background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #hero h1 {
+    font-size: 3em;
+    color: #333;
+  }
+  
+  /* Why Us Section */
+  #whyUs {
+    width: 40%;
+    margin: 0 auto;
+  }
+  
+  @media (max-width: 800px) {
+    #whyUs {
+      width: 100%;
+    }
+  }
+  
+  #whyUs p {
+    font-size: 1.2em;
+    color: #444;
+  }
+  
+  /* Call to Action Section */
+  #callToAction {
+    margin-top: 30px;
+  }
+  
+  @media (max-width: 800px) {
+    #callToAction {
+      width: 100%;
+    }
+  }
+  
+  #callToAction p {
+    font-size: 1.2em;
+    color: #444;
+  }
+  
+  #callToAction button {
+    padding: 15px 30px;
+    background-color: #ff69b4; /* Example button color */
+    color: #fff;
+    border: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #callToAction button:hover {
+    background-color: #e64980; /* Example hover color */
+  }
+  
