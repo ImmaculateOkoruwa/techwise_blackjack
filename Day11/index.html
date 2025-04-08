@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up Form</title>
+  <script src="script.js" defer></script> <!-- Link to the external JS file -->
+</head>
+<body>
+  <form id="signupForm">
+    <label for="fullName">Full Name:</label>
+    <input type="text" id="fullName" name="fullName"><br><br>
+
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username"><br><br>
+
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age"><br><br>
+
+    <label for="birthdate">Birthdate:</label>
+    <input type="date" id="birthdate" name="birthdate"><br><br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password"><br><br>
+
+    <label for="confirmPassword">Confirm Password:</label>
+    <input type="password" id="confirmPassword" name="confirmPassword"><br><br>
+
+    <label>
+      <input type="checkbox" id="legalCheckbox"> I agree to the legal terms
+    </label><br>
+    <label>
+      <input type="checkbox" id="termsCheckbox"> I agree to the terms and conditions
+    </label><br><br>
+
+    <button type="button" onclick="processForm()">Sign Up</button>
+  </form>
+</body>
+</html>
